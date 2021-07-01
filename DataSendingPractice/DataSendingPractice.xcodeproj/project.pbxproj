@@ -14,6 +14,7 @@
 		AB0327BC268C2EAE001FE336 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB0327BB268C2EAE001FE336 /* Assets.xcassets */; };
 		AB0327BF268C2EAE001FE336 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB0327BD268C2EAE001FE336 /* LaunchScreen.storyboard */; };
 		AB0327C8268C3B06001FE336 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0327C7268C3B06001FE336 /* SecondViewController.swift */; };
+		AB8B4431268DE67E00DEACEF /* Wish.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8B4430268DE67E00DEACEF /* Wish.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		AB0327BE268C2EAE001FE336 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB0327C0268C2EAE001FE336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB0327C7268C3B06001FE336 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		AB8B4430268DE67E00DEACEF /* Wish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wish.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				AB0327B2268C2EA9001FE336 /* AppDelegate.swift */,
 				AB0327B4268C2EA9001FE336 /* SceneDelegate.swift */,
 				AB0327B6268C2EA9001FE336 /* ViewController.swift */,
+				AB8B4430268DE67E00DEACEF /* Wish.swift */,
 				AB0327C7268C3B06001FE336 /* SecondViewController.swift */,
 				AB0327B8268C2EA9001FE336 /* Main.storyboard */,
 				AB0327BB268C2EAE001FE336 /* Assets.xcassets */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB8B4431268DE67E00DEACEF /* Wish.swift in Sources */,
 				AB0327C8268C3B06001FE336 /* SecondViewController.swift in Sources */,
 				AB0327B7268C2EA9001FE336 /* ViewController.swift in Sources */,
 				AB0327B3268C2EA9001FE336 /* AppDelegate.swift in Sources */,

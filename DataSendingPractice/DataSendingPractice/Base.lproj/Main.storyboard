@@ -28,6 +28,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXl-ih-KVW">
+                                <rect key="frame" x="186" y="538.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -35,7 +41,9 @@
                             <constraint firstItem="nIG-El-v0A" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="5ZF-ae-hfx"/>
                             <constraint firstItem="6uD-0a-Yuu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="54" id="J5A-N4-anz"/>
                             <constraint firstItem="nIG-El-v0A" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ZTJ-NT-CyB"/>
+                            <constraint firstItem="bXl-ih-KVW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="aDi-TK-n8d"/>
                             <constraint firstItem="6uD-0a-Yuu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="iSl-f8-H3E"/>
+                            <constraint firstItem="bXl-ih-KVW" firstAttribute="top" secondItem="nIG-El-v0A" secondAttribute="bottom" constant="50" id="rfI-5W-JpS"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zhT-kN-fgT">
@@ -47,6 +55,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="storedText" destination="bXl-ih-KVW" id="Gmz-5r-BQ9"/>
                         <outlet property="textShowHere" destination="nIG-El-v0A" id="g8S-Gu-t5f"/>
                     </connections>
                 </viewController>

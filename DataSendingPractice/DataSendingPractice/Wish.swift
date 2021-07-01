@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+struct Wish {
+    var name: String
+    
+    static var wishList: [Wish] = [
+        Wish(name: "Sam"),
+        Wish(name: "Hanna"),
+        Wish(name: "Bumoon")
+    ]
+}
