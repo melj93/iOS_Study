@@ -32,6 +32,7 @@ class ViewController: UIViewController, sendBackDelegate {
             let nav = segue.destination as! UINavigationController
             let secondVC = nav.topViewController as! SecondViewController
             secondVC.delegate = self
+            secondVC.edittedWish = Wish.wishList[0]
         }
     }
     
@@ -42,7 +43,8 @@ class ViewController: UIViewController, sendBackDelegate {
     }
     
     func wishEdit(data: Wish) {
-        print(wish1) // secondVC로 부터 밭은 editedWish
+        print("VC got editted Wish: \(data.name)") // secondVC로 부터 밭은 editedWish
+        firstWish.text = data.name
     }
 }
 

@@ -19,7 +19,6 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
     var edittedWish: Wish?
     var delegate: sendBackDelegate?
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         editWishTextField.delegate = self
@@ -28,7 +27,6 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
     //MARK: Actions
     @IBAction func onDone(_ sender: Any) {
         delegate?.wishEdit(data: edittedWish!) // 텍스트 필드에 있는 텍스트를 data로 edittedWish보내기
-        print("SecondVC text: \(editWishTextField.text!)")
         dismiss(animated: true, completion: nil)
     }
     
@@ -38,11 +36,12 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: 소원 TextField UITextFieldDelegate 함수들
     func textFieldShouldReturn(_ textField: UITextField) -> Bool { // return, Go 버튼을 누를시 발동
-        editWishTextField.endEditing(true)
-        print(editWishTextField.text!)
+        print("before edit: \(edittedWish?.name ?? "empty")")
+        print("You typed: \(editWishTextField.text!)") //뭐가 써졌는지 보자
         
         edittedWish?.name = editWishTextField.text!
-        
+        print("edittedWish: \(edittedWish?.name ?? "empty")") // 입력 됐는지 보자
+        editWishTextField.endEditing(true)
         return true
     }
     
