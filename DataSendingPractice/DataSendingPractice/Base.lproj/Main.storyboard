@@ -39,12 +39,28 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="go"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bI8-if-LtF">
+                                <rect key="frame" x="186" y="567" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7tG-cK-mVc">
+                                <rect key="frame" x="186" y="595.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="7tG-cK-mVc" firstAttribute="top" secondItem="bI8-if-LtF" secondAttribute="bottom" constant="7.5" id="38p-CR-fz8"/>
                             <constraint firstItem="nIG-El-v0A" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="5ZF-ae-hfx"/>
+                            <constraint firstItem="bI8-if-LtF" firstAttribute="top" secondItem="bXl-ih-KVW" secondAttribute="bottom" constant="7.5" id="5p9-ce-rIN"/>
+                            <constraint firstItem="bI8-if-LtF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5ps-uf-Ivx"/>
                             <constraint firstItem="6uD-0a-Yuu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="54" id="J5A-N4-anz"/>
+                            <constraint firstItem="7tG-cK-mVc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JvD-XI-sPO"/>
                             <constraint firstItem="8eY-Tz-IKz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="RNy-Y2-O06"/>
                             <constraint firstItem="nIG-El-v0A" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ZTJ-NT-CyB"/>
                             <constraint firstItem="bXl-ih-KVW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="aDi-TK-n8d"/>
@@ -64,8 +80,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="storedText" destination="bXl-ih-KVW" id="Gmz-5r-BQ9"/>
+                        <outlet property="firstWish" destination="bXl-ih-KVW" id="Gmz-5r-BQ9"/>
+                        <outlet property="secondWish" destination="bI8-if-LtF" id="2yh-bA-XO0"/>
                         <outlet property="textShowHere" destination="nIG-El-v0A" id="g8S-Gu-t5f"/>
+                        <outlet property="thirdWish" destination="7tG-cK-mVc" id="ZgY-gO-ETF"/>
                         <outlet property="writeWishHere" destination="8eY-Tz-IKz" id="7zY-aI-1a8"/>
                     </connections>
                 </viewController>
