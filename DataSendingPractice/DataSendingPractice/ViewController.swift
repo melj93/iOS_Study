@@ -18,12 +18,13 @@ class ViewController: UIViewController, UITextFieldDelegate, sendBackDelegate {
     
     @IBOutlet weak var writeWishHere: UITextField!
     
-    var preName1 = Wish.wishList[0]
-    var preName2 = Wish.wishList[1]
+    var wish1 = Wish.wishList[0]
+    var wish2 = Wish.wishList[1]
     
     override func viewDidLoad() {
-        textShowHere.text = "Recieved Text"
+        textShowHere.text = "Wish List"
         showWishes() // 미리 저장된 text를 보여주기.
+        
         writeWishHere.delegate = self
         super.viewDidLoad()
     }
@@ -47,21 +48,16 @@ class ViewController: UIViewController, UITextFieldDelegate, sendBackDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         writeWishHere.endEditing(true)
-        preName1.name = writeWishHere.text! // 입력받은 text를 someWish 이름에 저장.
+        wish1.name = writeWishHere.text! // 입력받은 text를 someWish 이름에 저장.
         //Wish.addSomeWishToWishList()
-        Wish.wishList.append(preName1)
+        Wish.wishList.append(wish1)
         print(Wish.wishList)
         //Wish.wishList[0].name = someWish.name 이걸 secondView에서 해야지.
         return true
     }
     
-    func dataReceived(data: String) {
-        textShowHere.text = data // secondVC로 부터 typing 밭은 
-        print(textShowHere.text!)
-    }
-    
     func wishEdit(data: Wish) {
-        print(preName1) // secondVC로 부터 밭은 editedWish
+        print(wish1) // secondVC로 부터 밭은 editedWish
     }
 }
 
