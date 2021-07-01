@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate, sendBackDelegate {
+class ViewController: UIViewController, sendBackDelegate {
     
     @IBOutlet weak var textShowHere: UILabel!
     @IBOutlet weak var firstWish: UILabel!
@@ -16,8 +16,6 @@ class ViewController: UIViewController, UITextFieldDelegate, sendBackDelegate {
     @IBOutlet weak var fourWish: UILabel!
     @IBOutlet weak var fiveWish: UILabel!
     
-    @IBOutlet weak var writeWishHere: UITextField!
-    
     var wish1 = Wish.wishList[0]
     var wish2 = Wish.wishList[1]
     
@@ -25,7 +23,6 @@ class ViewController: UIViewController, UITextFieldDelegate, sendBackDelegate {
         textShowHere.text = "Wish List"
         showWishes() // 미리 저장된 text를 보여주기.
         
-        writeWishHere.delegate = self
         super.viewDidLoad()
     }
 
@@ -44,16 +41,6 @@ class ViewController: UIViewController, UITextFieldDelegate, sendBackDelegate {
         firstWish.text = Wish.wishList[0].name
         secondWish.text = Wish.wishList[1].name
         thirdWish.text = Wish.wishList[2].name
-    }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        writeWishHere.endEditing(true)
-        wish1.name = writeWishHere.text! // 입력받은 text를 someWish 이름에 저장.
-        //Wish.addSomeWishToWishList()
-        Wish.wishList.append(wish1)
-        print(Wish.wishList)
-        //Wish.wishList[0].name = someWish.name 이걸 secondView에서 해야지.
-        return true
     }
     
     func wishEdit(data: Wish) {
