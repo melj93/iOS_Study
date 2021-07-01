@@ -34,29 +34,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8eY-Tz-IKz">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="소원을 쓰시오" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8eY-Tz-IKz">
                                 <rect key="frame" x="20" y="213" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="소원을 쓰시오" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6b-fC-0zv">
-                                <rect key="frame" x="147.5" y="176.5" width="119.5" height="26.5"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="nIG-El-v0A" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="5ZF-ae-hfx"/>
-                            <constraint firstItem="U6b-fC-0zv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Em2-fw-fm9"/>
                             <constraint firstItem="6uD-0a-Yuu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="54" id="J5A-N4-anz"/>
                             <constraint firstItem="8eY-Tz-IKz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="RNy-Y2-O06"/>
                             <constraint firstItem="nIG-El-v0A" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ZTJ-NT-CyB"/>
                             <constraint firstItem="bXl-ih-KVW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="aDi-TK-n8d"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8eY-Tz-IKz" secondAttribute="trailing" constant="20" id="axU-ve-ECM"/>
-                            <constraint firstItem="8eY-Tz-IKz" firstAttribute="top" secondItem="U6b-fC-0zv" secondAttribute="bottom" constant="10" id="eFB-RB-Hdj"/>
                             <constraint firstItem="6uD-0a-Yuu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="iSl-f8-H3E"/>
                             <constraint firstItem="8eY-Tz-IKz" firstAttribute="top" secondItem="6uD-0a-Yuu" secondAttribute="bottom" constant="50" id="jJN-4M-DAD"/>
                             <constraint firstItem="8eY-Tz-IKz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jVY-4Y-HmN"/>
