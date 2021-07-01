@@ -62,8 +62,8 @@
 			children = (
 				AB0327B2268C2EA9001FE336 /* AppDelegate.swift */,
 				AB0327B4268C2EA9001FE336 /* SceneDelegate.swift */,
-				AB0327B6268C2EA9001FE336 /* ViewController.swift */,
 				AB8B4430268DE67E00DEACEF /* Wish.swift */,
+				AB0327B6268C2EA9001FE336 /* ViewController.swift */,
 				AB0327C7268C3B06001FE336 /* SecondViewController.swift */,
 				AB0327B8268C2EA9001FE336 /* Main.storyboard */,
 				AB0327BB268C2EAE001FE336 /* Assets.xcassets */,

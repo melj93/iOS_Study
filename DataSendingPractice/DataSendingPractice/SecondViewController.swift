@@ -9,6 +9,7 @@ import UIKit
 
 protocol sendBackDelegate {
     func dataReceived(data: String)
+    func wishEdit(data: Wish)
 }
 
 class SecondViewController: UIViewController {
@@ -24,7 +25,7 @@ class SecondViewController: UIViewController {
     
     // Action
     @IBAction func onDone(_ sender: Any) {
-        delegate?.dataReceived(data: textFieldPost.text!)
+        delegate?.dataReceived(data: textFieldPost.text!) // 텍스트 필드에 있는 텍스트를 data로
         print("SecondVC text: \(textFieldPost.text!)")
         dismiss(animated: true, completion: nil)
     }
