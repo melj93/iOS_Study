@@ -33,4 +33,24 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
     @IBAction func onBack(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    
+    // TF funcs
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool { // return, Go 버튼을 누를시 발동
+        editWishTextField.endEditing(true)
+        print(editWishTextField.text!)
+        return true
+    }
+    
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        if editWishTextField.text != "" {   //빈 텍스트가 아니라면 실행하지않음
+            return true
+        }else {
+            editWishTextField.placeholder = "Type something" // 빈 텍스트라면 텍스트를 보여줌.
+            return false
+        }
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) { // textfiled.endEditing(true)시 발동
+        editWishTextField.text = ""
+    }
 }

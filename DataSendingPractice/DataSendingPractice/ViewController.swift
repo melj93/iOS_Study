@@ -13,8 +13,6 @@ class ViewController: UIViewController, sendBackDelegate {
     @IBOutlet weak var firstWish: UILabel!
     @IBOutlet weak var secondWish: UILabel!
     @IBOutlet weak var thirdWish: UILabel!
-    @IBOutlet weak var fourWish: UILabel!
-    @IBOutlet weak var fiveWish: UILabel!
     
     var wish1 = Wish.wishList[0]
     var wish2 = Wish.wishList[1]
