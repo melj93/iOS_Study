@@ -16,9 +16,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIG-El-v0A">
-                                <rect key="frame" x="179" y="439.5" width="56.5" height="27"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recieved Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIG-El-v0A">
+                                <rect key="frame" x="135" y="461.5" width="144" height="27"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FirstVIew Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6uD-0a-Yuu">
+                                <rect key="frame" x="153.5" y="142" width="107" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -27,14 +33,16 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="nIG-El-v0A" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="5ZF-ae-hfx"/>
+                            <constraint firstItem="6uD-0a-Yuu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="54" id="J5A-N4-anz"/>
                             <constraint firstItem="nIG-El-v0A" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ZTJ-NT-CyB"/>
+                            <constraint firstItem="6uD-0a-Yuu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="iSl-f8-H3E"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zhT-kN-fgT">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="4lf-XS-ke1">
                             <connections>
                                 <action selector="onAdd:" destination="BYZ-38-t0r" id="KTI-jy-4BO"/>
-                                <segue destination="10h-wP-3iX" kind="show" id="PKH-I5-odN"/>
+                                <segue destination="10h-wP-3iX" kind="show" identifier="goToSecondVC" id="PKH-I5-odN"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -44,25 +52,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="852" y="88"/>
+            <point key="canvasLocation" x="850.72463768115949" y="87.723214285714278"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="UTG-c3-WRI">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="qkp-gj-ZkM" customClass="SecondViewController" customModule="DataSendingPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pWo-Oc-3oV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SecondView Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7S-uD-2Yk">
-                                <rect key="frame" x="141.5" y="133" width="131" height="21"/>
+                                <rect key="frame" x="141.5" y="142" width="131" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sa3-SC-XJU">
-                                <rect key="frame" x="20" y="190" width="368" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sa3-SC-XJU">
+                                <rect key="frame" x="20" y="458" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -70,7 +77,11 @@
                         <viewLayoutGuide key="safeArea" id="U1Y-K1-JQL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Q7S-uD-2Yk" firstAttribute="top" secondItem="U1Y-K1-JQL" secondAttribute="top" constant="77" id="VxV-7W-BQi"/>
+                            <constraint firstItem="U1Y-K1-JQL" firstAttribute="trailing" secondItem="sa3-SC-XJU" secondAttribute="trailing" constant="20" id="03A-vL-ZTV"/>
+                            <constraint firstItem="Q7S-uD-2Yk" firstAttribute="top" secondItem="U1Y-K1-JQL" secondAttribute="top" constant="54" id="VxV-7W-BQi"/>
+                            <constraint firstItem="sa3-SC-XJU" firstAttribute="centerX" secondItem="U1Y-K1-JQL" secondAttribute="centerX" id="WT5-gF-ZKN"/>
+                            <constraint firstItem="sa3-SC-XJU" firstAttribute="centerY" secondItem="U1Y-K1-JQL" secondAttribute="centerY" id="XJO-Kh-lW3"/>
+                            <constraint firstItem="sa3-SC-XJU" firstAttribute="leading" secondItem="U1Y-K1-JQL" secondAttribute="leading" constant="20" id="cL2-Co-oI4"/>
                             <constraint firstItem="Q7S-uD-2Yk" firstAttribute="centerX" secondItem="U1Y-K1-JQL" secondAttribute="centerX" id="oGx-qD-NtX"/>
                         </constraints>
                     </view>
@@ -83,7 +94,6 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="A1D-GX-H3O">
                             <connections>
                                 <action selector="onDone:" destination="qkp-gj-ZkM" id="QOz-pB-mU3"/>
-                                <segue destination="BYZ-38-t0r" kind="show" identifier="goToVC" id="CVc-8I-Tt5"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -93,16 +103,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nQn-0j-PC3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="851" y="838"/>
+            <point key="canvasLocation" x="1574" y="88"/>
         </scene>
         <!--Second-->
         <scene sceneID="Akb-Ys-6aR">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="10h-wP-3iX" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="10h-wP-3iX" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Second" id="RST-Z9-J1I"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5hh-lH-Cyn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -112,7 +122,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YoT-a9-aan" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-62" y="838"/>
+            <point key="canvasLocation" x="851" y="830"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PJE-h3-0uD">
@@ -130,12 +140,9 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aVC-iU-dFe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-62.318840579710148" y="87.723214285714278"/>
+            <point key="canvasLocation" x="123" y="88"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="CVc-8I-Tt5"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

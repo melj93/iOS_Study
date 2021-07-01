@@ -7,21 +7,25 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+protocol sendBackDelegate {
+    func dataReceived(data: String)
+}
 
+class SecondViewController: UIViewController {
+    
     @IBOutlet weak var textFieldPost: UITextField!
+    
+    var delegate: sendBackDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "goToVC" {
-            let vc = segue.destination as? ViewController
-            vc?.text = textFieldPost.text ?? "empty"
-        }
-    }
+    
+    // Action
     @IBAction func onDone(_ sender: Any) {
+        delegate?.dataReceived(data: textFieldPost.text!)
+        print("SecondVC text: \(textFieldPost.text!)")
         dismiss(animated: true, completion: nil)
     }
     
