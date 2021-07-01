@@ -100,15 +100,23 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wish you should edit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iux-rE-o3g">
+                                <rect key="frame" x="127.5" y="417" width="159" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="U1Y-K1-JQL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="U1Y-K1-JQL" firstAttribute="trailing" secondItem="sa3-SC-XJU" secondAttribute="trailing" constant="20" id="03A-vL-ZTV"/>
+                            <constraint firstItem="Iux-rE-o3g" firstAttribute="centerX" secondItem="pWo-Oc-3oV" secondAttribute="centerX" id="Ovo-lD-Vov"/>
                             <constraint firstItem="Q7S-uD-2Yk" firstAttribute="top" secondItem="U1Y-K1-JQL" secondAttribute="top" constant="54" id="VxV-7W-BQi"/>
                             <constraint firstItem="sa3-SC-XJU" firstAttribute="centerX" secondItem="U1Y-K1-JQL" secondAttribute="centerX" id="WT5-gF-ZKN"/>
                             <constraint firstItem="sa3-SC-XJU" firstAttribute="centerY" secondItem="U1Y-K1-JQL" secondAttribute="centerY" id="XJO-Kh-lW3"/>
                             <constraint firstItem="sa3-SC-XJU" firstAttribute="leading" secondItem="U1Y-K1-JQL" secondAttribute="leading" constant="20" id="cL2-Co-oI4"/>
+                            <constraint firstItem="sa3-SC-XJU" firstAttribute="top" secondItem="Iux-rE-o3g" secondAttribute="bottom" constant="20" id="f2T-e6-fXx"/>
                             <constraint firstItem="Q7S-uD-2Yk" firstAttribute="centerX" secondItem="U1Y-K1-JQL" secondAttribute="centerX" id="oGx-qD-NtX"/>
                         </constraints>
                     </view>
@@ -125,6 +133,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="broughtWishName" destination="Iux-rE-o3g" id="ZkR-zx-eR8"/>
                         <outlet property="editWishTextField" destination="sa3-SC-XJU" id="YNR-iX-bT4"/>
                     </connections>
                 </viewController>

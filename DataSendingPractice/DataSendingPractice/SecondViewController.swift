@@ -14,16 +14,18 @@ protocol sendBackDelegate {
 class SecondViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var editWishTextField: UITextField!
+    @IBOutlet weak var broughtWishName: UILabel!
     
     var edittedWish: Wish?
     var delegate: sendBackDelegate?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         editWishTextField.delegate = self
     }
     
-    // Action
+    //MARK: Actions
     @IBAction func onDone(_ sender: Any) {
         delegate?.wishEdit(data: edittedWish!) // 텍스트 필드에 있는 텍스트를 data로 edittedWish보내기
         print("SecondVC text: \(editWishTextField.text!)")
@@ -34,10 +36,13 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
         dismiss(animated: true, completion: nil)
     }
     
-    // TF funcs
+    // MARK: 소원 TextField UITextFieldDelegate 함수들
     func textFieldShouldReturn(_ textField: UITextField) -> Bool { // return, Go 버튼을 누를시 발동
         editWishTextField.endEditing(true)
         print(editWishTextField.text!)
+        
+        edittedWish?.name = editWishTextField.text!
+        
         return true
     }
     
