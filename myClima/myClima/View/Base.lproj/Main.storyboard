@@ -61,6 +61,9 @@
                                                     <imageReference key="image" image="magnifyingglass" catalog="system" symbolScale="large"/>
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="searchPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p5T-kj-ybV"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -136,7 +139,7 @@
                     </view>
                     <connections>
                         <outlet property="cityNameLabel" destination="Nph-69-4hq" id="bCo-By-f69"/>
-                        <outlet property="searchTextField" destination="haE-md-IsP" id="gW4-q9-Tfw"/>
+                        <outlet property="searchTextField" destination="H72-Gd-4Hi" id="kkO-En-y8z"/>
                         <outlet property="temperatureLabel" destination="HCy-6x-gnc" id="cyf-cS-l2w"/>
                         <outlet property="weatherImageView" destination="RC0-nb-72L" id="Ju6-RX-Pz6"/>
                     </connections>
@@ -152,7 +155,7 @@
         <image name="location.circle.fill" catalog="system" width="128" height="121"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <namedColor name="my dark mode Color">
-            <color red="0.96029632259999997" green="0.95930362179999995" blue="0.89985357700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.95999997854232788" green="0.95899999141693115" blue="0.89999997615814209" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemFillColor">
             <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
