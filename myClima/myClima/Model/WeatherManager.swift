@@ -14,10 +14,29 @@ struct WeatherManager {
         let urlString = url + "&q=" + cityName
         print(urlString)
         
-        performRequest()
+        performRequest(urlString: urlString)
     }
     
-    func performRequest() {
+    func performRequest(urlString: String) {
+        if let url = URL(string: urlString) {
+            let session = URLSession(configuration: .default)
+            let task = session.dataTask(with: url, completionHandler: handle(data:urlResponse:error:))
+            
+            task.resume()
+        }
         
     }
+    
+    func handle(data: Data?, urlResponse: URLResponse?, error: Error?){
+        if error != nil {
+            print(error!)
+            return
+        }
+        
+        if let safeData = data {
+            let stringData = String(data: safeData, encoding: .utf8)
+            print(stringData!)
+        }
+    }
 }
+
