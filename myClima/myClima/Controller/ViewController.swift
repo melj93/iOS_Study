@@ -53,9 +53,12 @@ extension ViewController: UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         cityNameLabel.text = "changed"
+        
         if let city = searchTextField.text {
             weatherManager.fetchURL(cityName: city)
         }
+        
+        searchTextField.text = ""
     }
 }
 
