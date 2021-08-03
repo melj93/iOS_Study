@@ -41,9 +41,32 @@ struct WeatherManager {
             print(decodedData.main.temp)
             print(decodedData.weather[0].description)
             print(decodedData.weather[0].id)
+            
+            let id = decodedData.weather[0].id
+            print(getConditionId(weatherId: id))
+            
         } catch{
             print(error)
         }
     }// 기를 자신의 것으로 만들기
+    
+    func getConditionId(weatherId: Int) -> String {
+        switch weatherId {
+        case 200 ... 299:
+            return "cloud.bolt"
+        case 300 ... 399:
+            return "cloud.drizzle"
+        case 500 ... 599:
+            return "cloud.rain"
+        case 600 ... 699:
+            return "cloud.snow"
+        case 700 ... 799:
+            return "cloud.fog"
+        case 800 ... 804:
+            return "cloud"
+        default:
+            return "sun.max"
+        }
+    }
 }
 
