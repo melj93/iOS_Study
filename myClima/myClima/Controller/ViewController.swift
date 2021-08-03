@@ -46,18 +46,15 @@ extension ViewController: UITextFieldDelegate {
         if textField.text != "" { // 2. 아니면 진행
             return true
         }else {
-            textField.placeholder = "적으세요!!" // 1. 필드가 비워졌다면 적으라는 문구를 보이고 stop
+            textField.placeholder = "Plz input City name" // 1. 필드가 비워졌다면 적으라는 문구를 보이고 stop
             return false
         }
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        cityNameLabel.text = "changed"
-        
         if let city = searchTextField.text {
             weatherManager.fetchURL(cityName: city)
         }
-        
         searchTextField.text = ""
     }
 }
