@@ -27,6 +27,7 @@ class ViewController: UIViewController {
     }
 }
 
+//MARK:- UITextFieldDelegate
 extension ViewController: UITextFieldDelegate {
     //돋보기 아이콘을 눌렀을 때
     @IBAction func searchPressed(_ sender: Any) {
@@ -51,12 +52,11 @@ extension ViewController: UITextFieldDelegate {
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        print("textFieldDidEndEditing")
         cityNameLabel.text = "changed"
         if let city = searchTextField.text {
             weatherManager.fetchURL(cityName: city)
         }
-        
-        //city name send to weather api
     }
 }
+
+

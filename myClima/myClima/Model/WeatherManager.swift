@@ -15,28 +15,35 @@ struct WeatherManager {
         print(urlString)
         
         performRequest(urlString: urlString)
-    }
+    } // 마법 주문을 외우기
     
     func performRequest(urlString: String) {
         if let url = URL(string: urlString) {
             let session = URLSession(configuration: .default)
-            let task = session.dataTask(with: url, completionHandler: handle(data:urlResponse:error:))
-            
+            let task = session.dataTask(with: url) { data, response, error in
+                if error != nil {
+                    print(error!)
+                    return
+                }
+                if let safeData = data {
+                    parseJSON(weatherData: safeData)
+                }
+            }
             task.resume()
         }
-        
-    }
+    }// 자연의 기를 받기
     
-    func handle(data: Data?, urlResponse: URLResponse?, error: Error?){
-        if error != nil {
-            print(error!)
-            return
+    func parseJSON(weatherData: Data){
+        let decoder = JSONDecoder()
+        do{
+            let decodedData = try decoder.decode(WeatherData.self, from: weatherData)
+            print(decodedData.name)
+            print(decodedData.main.temp)
+            print(decodedData.weather[0].description)
+            print(decodedData.weather[0].id)
+        } catch{
+            print(error)
         }
-        
-        if let safeData = data {
-            let stringData = String(data: safeData, encoding: .utf8)
-            print(stringData!)
-        }
-    }
+    }// 기를 자신의 것으로 만들기
 }
 

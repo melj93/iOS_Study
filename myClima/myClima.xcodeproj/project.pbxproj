@@ -14,7 +14,7 @@
 		AB08E1A026A9AFC90016FB81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB08E19F26A9AFC90016FB81 /* Assets.xcassets */; };
 		AB08E1A326A9AFC90016FB81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB08E1A126A9AFC90016FB81 /* LaunchScreen.storyboard */; };
 		AB81640526B3A4E400E220FD /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB81640426B3A4E400E220FD /* WeatherManager.swift */; };
-		AB81640A26B3AAC700E220FD /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB81640926B3AAC700E220FD /* Weather.swift */; };
+		AB81640A26B3AAC700E220FD /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB81640926B3AAC700E220FD /* WeatherData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		AB08E1A226A9AFC90016FB81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB08E1A426A9AFC90016FB81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB81640426B3A4E400E220FD /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
-		AB81640926B3AAC700E220FD /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		AB81640926B3AAC700E220FD /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				AB81640426B3A4E400E220FD /* WeatherManager.swift */,
-				AB81640926B3AAC700E220FD /* Weather.swift */,
+				AB81640926B3AAC700E220FD /* WeatherData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -171,7 +171,7 @@
 				AB08E19726A9AFC50016FB81 /* AppDelegate.swift in Sources */,
 				AB81640526B3A4E400E220FD /* WeatherManager.swift in Sources */,
 				AB08E19926A9AFC50016FB81 /* SceneDelegate.swift in Sources */,
-				AB81640A26B3AAC700E220FD /* Weather.swift in Sources */,
+				AB81640A26B3AAC700E220FD /* WeatherData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
