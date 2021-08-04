@@ -45,6 +45,7 @@ struct WeatherManager {
             
             print(weather)
             print(weather.conditionName)
+            print(weather.temperatureString)
         } catch{
             print(error)
         }
