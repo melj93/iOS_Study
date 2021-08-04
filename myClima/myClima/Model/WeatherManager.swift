@@ -7,17 +7,23 @@
 
 import Foundation
 
+protocol WeatherManagerDelegate {
+    func didUpdateWeather(weatherManager: WeatherManager, weather: WeatherModel)
+}
+
 struct WeatherManager {
+    var delegate: WeatherManagerDelegate?
     var url =  "https://api.openweathermap.org/data/2.5/weather?appid=401b3ad481276de0f16f0f138ce977b6&units=metric"
+    
     
     func fetchURL(cityName: String){
         let urlString = url + "&q=" + cityName
         print(urlString)
         
-        performRequest(urlString: urlString)
+        performRequest(with: urlString)
     }
     
-    func performRequest(urlString: String) {
+    func performRequest(with urlString: String) {
         if let url = URL(string: urlString) {
             let session = URLSession(configuration: .default)
             let task = session.dataTask(with: url) { data, response, error in
