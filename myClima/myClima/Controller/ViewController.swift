@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         searchTextField.delegate = self
+        weatherManager.delegate = self
         
         searchTextField.placeholder = "도시 이름을 적으세요."
         searchTextField.autocapitalizationType = UITextAutocapitalizationType.words
@@ -59,4 +60,10 @@ extension ViewController: UITextFieldDelegate {
     }
 }
 
+//MARK: - WeatherManagerDelegate
+extension ViewController: WeatherManagerDelegate{
+    func didUpdateWeather(weatherManager: WeatherManager, weather: WeatherModel) {
+        print(weather.temperatureString)
+    }
+}
 
