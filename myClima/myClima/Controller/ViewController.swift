@@ -34,6 +34,11 @@ class ViewController: UIViewController {
         searchTextField.autocapitalizationType = UITextAutocapitalizationType.words
         searchTextField.returnKeyType = UIReturnKeyType.go
     }
+    
+    @IBAction func onNavigation(_ sender: UIButton) {
+        locationManager.requestLocation()
+    }
+    
 }
 
 //MARK:- UITextFieldDelegate
@@ -41,10 +46,9 @@ extension ViewController: UITextFieldDelegate {
     //돋보기 아이콘을 눌렀을 때
     @IBAction func searchPressed(_ sender: Any) {
         searchTextField.endEditing(true)
-        print(searchTextField.text!)
     }
     
-    //go버튼을 눌렀을 때
+    //go (return) 했을때
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         searchTextField.endEditing(true) //자판 닫기
         return true
@@ -75,11 +79,10 @@ extension ViewController: WeatherManagerDelegate{
     }
     
     func didUpdateWeather(weatherManager: WeatherManager, weather: WeatherModel) {
-        print(weather.temperatureString)
-        
         DispatchQueue.main.async {
             self.temperatureLabel.text = weather.temperatureString
             self.weatherImageView.image = UIImage(systemName: weather.conditionName)
+            self.cityNameLabel.text = weather.cityName
             print(weather.conditionName)
         }
     }

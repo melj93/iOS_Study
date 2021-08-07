@@ -39,6 +39,9 @@
                                                     <imageReference key="image" image="location.circle.fill" catalog="system" symbolScale="large"/>
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20" scale="large"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="onNavigation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Slq-qi-ydW"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H72-Gd-4Hi">
                                                 <rect key="frame" x="57" y="0.0" width="166" height="40"/>
