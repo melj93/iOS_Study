@@ -13,7 +13,7 @@
 		AB86861826BF65D80049E6DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB86861626BF65D80049E6DF /* Main.storyboard */; };
 		AB86861A26BF65DC0049E6DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB86861926BF65DC0049E6DF /* Assets.xcassets */; };
 		AB86861D26BF65DC0049E6DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB86861B26BF65DC0049E6DF /* LaunchScreen.storyboard */; };
-		AB86862826BF664A0049E6DF /* BitcoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB86862726BF664A0049E6DF /* BitcoinModel.swift */; };
+		AB86862A26C226820049E6DF /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB86862926C226820049E6DF /* CoinManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		AB86861926BF65DC0049E6DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB86861C26BF65DC0049E6DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB86861E26BF65DC0049E6DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB86862726BF664A0049E6DF /* BitcoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinModel.swift; sourceTree = "<group>"; };
+		AB86862926C226820049E6DF /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +89,7 @@
 		AB86862626BF661E0049E6DF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AB86862726BF664A0049E6DF /* BitcoinModel.swift */,
+				AB86862926C226820049E6DF /* CoinManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -164,9 +164,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB86862A26C226820049E6DF /* CoinManager.swift in Sources */,
 				AB86861526BF65D80049E6DF /* ViewController.swift in Sources */,
 				AB86861126BF65D80049E6DF /* AppDelegate.swift in Sources */,
-				AB86862826BF664A0049E6DF /* BitcoinModel.swift in Sources */,
 				AB86861326BF65D80049E6DF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
