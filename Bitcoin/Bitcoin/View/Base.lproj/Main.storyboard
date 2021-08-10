@@ -37,11 +37,11 @@
                                         <color key="textColor" name="Title Color"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JWl-lZ-6IK" userLabel="Coin View">
-                                        <rect key="frame" x="25.5" y="85" width="363" height="80"/>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JWl-lZ-6IK" userLabel="Coin View">
+                                        <rect key="frame" x="47" y="85" width="320" height="80"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZQg-6L-Fw1">
-                                                <rect key="frame" x="0.0" y="0.0" width="353" height="80"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="310" height="80"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tT4-ae-ahl">
                                                         <rect key="frame" x="0.0" y="0.5" width="80" height="79"/>
@@ -52,13 +52,13 @@
                                                         <imageReference key="image" image="bitcoinsign.circle.fill" catalog="system" symbolScale="default"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tVQ-Mx-dCU">
-                                                        <rect key="frame" x="90" y="25" width="202.5" height="30"/>
+                                                        <rect key="frame" x="90" y="25" width="159.5" height="30"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kBX-7E-5dF">
-                                                        <rect key="frame" x="302.5" y="25" width="50.5" height="30"/>
+                                                        <rect key="frame" x="259.5" y="25" width="50.5" height="30"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -78,6 +78,11 @@
                                             <constraint firstAttribute="height" constant="80" id="V2W-Et-e6Q"/>
                                             <constraint firstAttribute="trailing" secondItem="ZQg-6L-Fw1" secondAttribute="trailing" constant="10" id="hwX-kh-OLe"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -93,6 +98,11 @@
                             <constraint firstItem="d1K-fy-pov" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="z6Y-Fj-qRh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bitcoinLabel" destination="tVQ-Mx-dCU" id="lso-9U-dK8"/>
+                        <outlet property="currencyLabel" destination="kBX-7E-5dF" id="37F-Gs-Jvq"/>
+                        <outlet property="currencyPicker" destination="wB6-1E-BPm" id="CjI-vR-VPP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
