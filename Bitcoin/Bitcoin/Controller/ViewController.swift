@@ -36,6 +36,7 @@ extension ViewController: UIPickerViewDelegate{
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let currency = coinManager.currencyArray[row]
         coinManager.getCoinPrice(for: currency)
+        currencyLabel.text = currency
     }
 }
 
@@ -46,6 +47,18 @@ extension ViewController: UIPickerViewDataSource {
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return coinManager.currencyArray.count
+    }
+}
+
+extension ViewController: CoinManagerDelegate {
+    func didUpdateCoin(price: Double) {
+        DispatchQueue.main.async {
+            self.bitcoinLabel.text = String(format: "%.2f", price)
+        }
+    }
+    
+    func didFailWithError(error: Error) {
+        print(error)
     }
     
     
