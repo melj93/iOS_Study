@@ -28,15 +28,29 @@ struct CoinManager {
             let session = URLSession(configuration: .default)
             let task = session.dataTask(with: url) { data, response, error in
                 if error != nil {
-                    print(error!)
+                    self.delegate?.didFailWithError(error: error!)
                     return
                 }
                 if let safeData = data {
-                    print(safeData)
+                    let coin = self.parseJSON(safeData)
+                    self.delegate?.didUpdateCoin(price: coin)
+                    
                 }
             }
             task.resume()
         }
     }
-    
+    func parseJSON(_ coinData: Data) -> Double {
+        let decoder = JSONDecoder()
+        do{
+            let decodedData = try decoder.decode(CoinData.self, from: coinData)
+            let lastPrice = decodedData.rate
+            print(lastPrice)
+            
+            return lastPrice
+        } catch {
+            delegate?.didFailWithError(error: error)
+            return 0
+        }
+    }
 }
