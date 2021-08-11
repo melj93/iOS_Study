@@ -25,19 +25,21 @@ struct CoinManager {
         print(urlString)
         
         if let url = URL(string: urlString){
+            
             let session = URLSession(configuration: .default)
             let task = session.dataTask(with: url) { data, response, error in
                 if error != nil {
                     self.delegate?.didFailWithError(error: error!)
                     return
                 }
+                
                 if let safeData = data {
                     if let coinPrice = self.parseJSON(safeData){
+                        print(coinPrice)
                         let priceString = String(format: "%.2f", coinPrice)
+                        print(priceString)
                         self.delegate?.didUpdateCoin(price: priceString, currency: currency)
                     }
-                    
-                    
                 }
             }
             task.resume()

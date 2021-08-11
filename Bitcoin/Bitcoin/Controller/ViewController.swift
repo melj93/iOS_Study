@@ -24,8 +24,6 @@ class ViewController: UIViewController {
         
         coinManager.delegate = self
     }
-
-
 }
 
 //MARK: - CoinManagerDeleagate
@@ -58,7 +56,7 @@ extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let currency = coinManager.currencyArray[row]
-        currencyLabel.text = currency
+        coinManager.getCoinPrice(for: currency)
     }
 }
 
