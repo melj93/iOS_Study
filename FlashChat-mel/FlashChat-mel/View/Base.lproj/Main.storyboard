@@ -167,6 +167,9 @@
                                             <constraint firstAttribute="height" constant="40" id="vEX-RJ-Gp3"/>
                                         </constraints>
                                         <state key="normal" image="paperplane.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="sendBtnPressed:" destination="5vO-KE-ESs" eventType="touchUpInside" id="Ol6-nH-TYW"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write a message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jVq-n4-p0n" userLabel="Message Textfield">
                                         <rect key="frame" x="20" y="20" width="314" height="40"/>
@@ -213,6 +216,9 @@
                             <constraint firstItem="Rvi-1a-L1a" firstAttribute="leading" secondItem="tPY-Sk-Gfo" secondAttribute="leading" id="rAY-hV-0Gn"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="chatTableView" destination="Rvi-1a-L1a" id="o9E-tN-2H8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M2t-hI-wax" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -221,7 +227,6 @@
         <!--Log In View Contoller-->
         <scene sceneID="KN0-ke-4MG">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RS3-7d-Tz5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="Xdn-UM-ng2" customClass="LogInViewContoller" customModule="FlashChat_mel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tbw-5j-TB6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -305,6 +310,7 @@
                         <outlet property="passworldTextField" destination="Y7S-sN-yhS" id="MQc-SS-wER"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RS3-7d-Tz5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="767" y="775"/>
         </scene>
