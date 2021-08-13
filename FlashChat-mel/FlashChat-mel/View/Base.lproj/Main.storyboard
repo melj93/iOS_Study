@@ -218,11 +218,11 @@
             </objects>
             <point key="canvasLocation" x="1529" y="425"/>
         </scene>
-        <!--Login View Controller-->
+        <!--Log In View Contoller-->
         <scene sceneID="KN0-ke-4MG">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RS3-7d-Tz5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController id="Xdn-UM-ng2" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController id="Xdn-UM-ng2" customClass="LogInViewContoller" customModule="FlashChat_mel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tbw-5j-TB6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -268,6 +268,9 @@
                                         <state key="normal" title="Log In">
                                             <color key="titleColor" name="BrandLightBlue"/>
                                         </state>
+                                        <connections>
+                                            <action selector="logInPressed:" destination="Xdn-UM-ng2" eventType="touchUpInside" id="Cvb-cE-nJq"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -297,6 +300,10 @@
                             <constraint firstItem="fnu-X4-bCs" firstAttribute="top" secondItem="ixK-wF-QLH" secondAttribute="top" id="ypL-1P-Joa"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="w9q-po-0TR" id="Z4a-nd-ICU"/>
+                        <outlet property="passworldTextField" destination="Y7S-sN-yhS" id="MQc-SS-wER"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="767" y="775"/>
