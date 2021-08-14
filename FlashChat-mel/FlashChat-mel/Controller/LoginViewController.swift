@@ -14,6 +14,6 @@ class LogInViewContoller: UIViewController {
     
     
     @IBAction func logInPressed(_ sender: UIButton) {
+       
     }
-    
 }
