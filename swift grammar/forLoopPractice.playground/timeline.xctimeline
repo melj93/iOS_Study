@@ -3,7 +3,12 @@
    version = "3.0">
    <TimelineItems>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "file:///Users/samueljeong/Desktop/practice/Practice/swift%20grammar/forLoopPractice.playground#CharacterRangeLen=24&amp;CharacterRangeLoc=468&amp;EndingColumnNumber=0&amp;EndingLineNumber=19&amp;StartingColumnNumber=5&amp;StartingLineNumber=18&amp;Timestamp=650796612.5037349"
+         documentLocation = "file:///Users/samueljeong/Desktop/practice/Practice/swift%20grammar/forLoopPractice.playground#CharacterRangeLen=24&amp;CharacterRangeLoc=446&amp;EndingColumnNumber=0&amp;EndingLineNumber=19&amp;StartingColumnNumber=5&amp;StartingLineNumber=18&amp;Timestamp=650819989.068887"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/samueljeong/Desktop/practice/Practice/swift%20grammar/forLoopPractice.playground#CharacterRangeLen=16&amp;CharacterRangeLoc=685&amp;EndingColumnNumber=0&amp;EndingLineNumber=32&amp;StartingColumnNumber=0&amp;StartingLineNumber=31&amp;Timestamp=650819989.069055"
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>
