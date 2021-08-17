@@ -1,0 +1,6 @@
+framework module Pods_FlashChat_mel {
+  umbrella header "Pods-FlashChat-mel-umbrella.h"
+
+  export *
+  module * { export * }
+}

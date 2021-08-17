@@ -1,0 +1,8 @@
+platform :ios, '9.0'
+
+target 'FlashChat-mel' do
+  use_frameworks!
+
+  # Pods for FlashChat-mel
+    pod 'CLTypingLabel'
+end
