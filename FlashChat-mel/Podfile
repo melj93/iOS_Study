@@ -4,4 +4,6 @@ target 'FlashChat-mel' do
   use_frameworks!
 
   # Pods for FlashChat-mel
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
 end
