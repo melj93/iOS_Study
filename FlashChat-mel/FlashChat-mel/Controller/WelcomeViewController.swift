@@ -19,19 +19,11 @@ class WelcomeViewController: UIViewController {
         titleLabel.text = ""
         let title = "⚡️FlashChat"
         for letter in title {
-            print(0.1 * charIndex)
-            print(letter)
             Timer.scheduledTimer(withTimeInterval: 0.1 * charIndex, repeats: false) { (timer) in
                 self.titleLabel.text?.append(letter)
             }
             charIndex += 1
         }
-        
-    }
-    
-    @IBAction func registerPressed(_ sender: Any) {
-    }
-    @IBAction func logInPressed(_ sender: Any) {
         
     }
 }
