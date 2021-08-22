@@ -158,6 +158,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ceG-YF-ZQg"/>
                     <connections>
+                        <outlet property="emailTextField" destination="Mhc-96-1dI" id="Or1-ke-vlJ"/>
                         <outlet property="passworldTextField" destination="pJ2-Z4-Was" id="AZw-we-sp2"/>
                         <segue destination="5vO-KE-ESs" kind="show" identifier="RegisterToChat" id="Hta-AY-kO6"/>
                     </connections>
