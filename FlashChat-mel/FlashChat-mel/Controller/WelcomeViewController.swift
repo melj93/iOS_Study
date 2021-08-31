@@ -17,7 +17,7 @@ class WelcomeViewController: UIViewController {
         //Typing animation in viewDidLoad() Using for loop
         var charIndex = 0.0
         titleLabel.text = ""
-        let title = "⚡️FlashChat"
+        let title = K.appName
         for letter in title {
             Timer.scheduledTimer(withTimeInterval: 0.1 * charIndex, repeats: false) { (timer) in
                 self.titleLabel.text?.append(letter)
