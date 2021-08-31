@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,7 @@
 		AB86865126C4EE1F0049E6DF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB86865026C4EE1F0049E6DF /* RegisterViewController.swift */; };
 		AB86865326C4EE2E0049E6DF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB86865226C4EE2E0049E6DF /* LoginViewController.swift */; };
 		AB86865526C4EE390049E6DF /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB86865426C4EE390049E6DF /* ChatViewController.swift */; };
+		ABDB5A8326DE860600305647 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDB5A8226DE860600305647 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		AB86865026C4EE1F0049E6DF /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		AB86865226C4EE2E0049E6DF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AB86865426C4EE390049E6DF /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		ABDB5A8226DE860600305647 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EB1BBFE70CAB737989E77A4F /* Pods-FlashChat-mel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashChat-mel.debug.xcconfig"; path = "Target Support Files/Pods-FlashChat-mel/Pods-FlashChat-mel.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +91,7 @@
 				AB86864426C4DD500049E6DF /* LaunchScreen.storyboard */,
 				AB86864726C4DD500049E6DF /* Info.plist */,
 				AB17CA3626CF8E8E00038B89 /* GoogleService-Info.plist */,
+				ABDB5A8226DE860600305647 /* Constants.swift */,
 			);
 			path = "FlashChat-mel";
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				AB86863A26C4DD4A0049E6DF /* AppDelegate.swift in Sources */,
 				AB86863C26C4DD4A0049E6DF /* SceneDelegate.swift in Sources */,
 				AB86865326C4EE2E0049E6DF /* LoginViewController.swift in Sources */,
+				ABDB5A8326DE860600305647 /* Constants.swift in Sources */,
 				AB86865526C4EE390049E6DF /* ChatViewController.swift in Sources */,
 				AB86865126C4EE1F0049E6DF /* RegisterViewController.swift in Sources */,
 			);
