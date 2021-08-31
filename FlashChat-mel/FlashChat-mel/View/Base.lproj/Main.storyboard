@@ -334,7 +334,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="w9q-po-0TR" id="Z4a-nd-ICU"/>
                         <outlet property="passworldTextField" destination="Y7S-sN-yhS" id="MQc-SS-wER"/>
-                        <segue destination="5vO-KE-ESs" kind="show" identifier="LogInToChat" id="C3p-kf-3hb"/>
+                        <segue destination="5vO-KE-ESs" kind="show" identifier="LoginToChat" id="C3p-kf-3hb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RS3-7d-Tz5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
