@@ -19,6 +19,7 @@
 		AB86865326C4EE2E0049E6DF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB86865226C4EE2E0049E6DF /* LoginViewController.swift */; };
 		AB86865526C4EE390049E6DF /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB86865426C4EE390049E6DF /* ChatViewController.swift */; };
 		ABDB5A8326DE860600305647 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDB5A8226DE860600305647 /* Constants.swift */; };
+		ABE570B626DF41B000333702 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE570B526DF41B000333702 /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		AB86865226C4EE2E0049E6DF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AB86865426C4EE390049E6DF /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		ABDB5A8226DE860600305647 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		ABE570B526DF41B000333702 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		EB1BBFE70CAB737989E77A4F /* Pods-FlashChat-mel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashChat-mel.debug.xcconfig"; path = "Target Support Files/Pods-FlashChat-mel/Pods-FlashChat-mel.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +120,7 @@
 		AB86864F26C4EDFF0049E6DF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				ABE570B526DF41B000333702 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				AB86863C26C4DD4A0049E6DF /* SceneDelegate.swift in Sources */,
 				AB86865326C4EE2E0049E6DF /* LoginViewController.swift in Sources */,
 				ABDB5A8326DE860600305647 /* Constants.swift in Sources */,
+				ABE570B626DF41B000333702 /* Message.swift in Sources */,
 				AB86865526C4EE390049E6DF /* ChatViewController.swift in Sources */,
 				AB86865126C4EE1F0049E6DF /* RegisterViewController.swift in Sources */,
 			);

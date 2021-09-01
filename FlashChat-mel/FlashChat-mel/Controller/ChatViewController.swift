@@ -11,8 +11,15 @@ import Firebase
 class ChatViewController: UIViewController {
     @IBOutlet weak var chatTableView: UITableView!
     
+    let message: [Message] = [
+        Message(sender: "1@2.com", body: "Hey!"),
+        Message(sender: "sam@gmail.com", body: "Hello!"),
+        Message(sender: "1@2.com", body: "What's up?")
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        chatTableView.dataSource = self
         title = K.appName
         navigationItem.hidesBackButton = true
     }
@@ -26,4 +33,18 @@ class ChatViewController: UIViewController {
             print("Error signing out: %@", signOutError)
         }
     }
+}
+
+extension ChatViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return message.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath)
+        cell.textLabel?.text = "This is a cell"
+        return cell
+    }
+    
+    
 }
