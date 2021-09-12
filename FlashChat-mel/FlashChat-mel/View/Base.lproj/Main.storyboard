@@ -210,16 +210,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Rvi-1a-L1a">
                                 <rect key="frame" x="0.0" y="88" width="414" height="714"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ReusableCell" id="YSo-fJ-XMV">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YSo-fJ-XMV" id="uwo-mr-k2P">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tPY-Sk-Gfo"/>
@@ -242,7 +232,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="chatTableView" destination="Rvi-1a-L1a" id="AKl-sN-9aL"/>
+                        <outlet property="tableView" destination="Rvi-1a-L1a" id="AKl-sN-9aL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M2t-hI-wax" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
