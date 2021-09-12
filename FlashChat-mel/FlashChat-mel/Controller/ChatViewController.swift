@@ -9,7 +9,7 @@ import UIKit
 import Firebase
 
 class ChatViewController: UIViewController {
-    @IBOutlet weak var chatTableView: UITableView!
+    @IBOutlet weak var tableView: UITableView!
     
     let message: [Message] = [
         Message(sender: "1@2.com", body: "Hey!"),
