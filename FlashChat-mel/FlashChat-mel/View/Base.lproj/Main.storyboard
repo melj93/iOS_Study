@@ -186,7 +186,7 @@
                                         </constraints>
                                         <state key="normal" image="paperplane.fill" catalog="system"/>
                                         <connections>
-                                            <action selector="sendBtnPressed:" destination="5vO-KE-ESs" eventType="touchUpInside" id="Ol6-nH-TYW"/>
+                                            <action selector="sendPressed:" destination="5vO-KE-ESs" eventType="touchUpInside" id="Ol6-nH-TYW"/>
                                         </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write a message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jVq-n4-p0n" userLabel="Message Textfield">
@@ -232,6 +232,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="messageTextField" destination="jVq-n4-p0n" id="PbS-Me-Z5W"/>
                         <outlet property="tableView" destination="Rvi-1a-L1a" id="AKl-sN-9aL"/>
                     </connections>
                 </viewController>
