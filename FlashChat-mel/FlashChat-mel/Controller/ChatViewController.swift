@@ -14,7 +14,7 @@ class ChatViewController: UIViewController {
     
     let db = Firestore.firestore()
     
-    let message: [Message] = [
+    var message: [Message] = [
         Message(sender: "1@2.com", body: "Hey!"),
         Message(sender: "sam@gmail.com", body: "Hello!"),
         Message(sender: "1@2.com", body: "What's up? blablablablablablablablablablablablablablablablablabla")
@@ -27,7 +27,26 @@ class ChatViewController: UIViewController {
         navigationItem.hidesBackButton = true
         
         tableView.register(UINib(nibName: K.cellNibName, bundle: nil), forCellReuseIdentifier: K.cellIdentifier)
+        
+        loadMessages()
     }
+    
+    func loadMessages() {
+        message = []
+        
+        // .getDocuments: Firebase 데이터베이스 안에 있는 데이터를 가져온다. 자동완성 (completion)에서 Enter
+        db.collection(K.FStore.collectionName).getDocuments { (querySnapshot, error) in
+            if let e = error {
+                print("There was an issue retrieving data from FireStore. \(e)")
+            }else  {
+                //querySnapshot 에대한 이해 QueryDocumentSnapshot: The document is guaranteed to exist and its data can be extracted with the data property or by using subscript syntax to access a specific field.
+                //자세한 내용은 https://firebase.google.com/docs/reference/swift/firebasefirestore/api/reference/Classes/QueryDocumentSnapshot
+                querySnapshot?.documents[0].data()[K.FStore.senderField]
+                //documents 의 첫번째 배열에 있는 데이터, 그리고 그 배열의 키값으로 참조
+            }
+        }
+    }
+    
     @IBAction func sendPressed(_ sender: UIButton) {
         if let messageBody = messageTextField.text, let messageSender = Auth.auth().currentUser?.email {
             db.collection(K.FStore.collectionName).addDocument(data: [K.FStore.senderField: messageSender, K.FStore.bodyField: messageBody]) { (error) in
