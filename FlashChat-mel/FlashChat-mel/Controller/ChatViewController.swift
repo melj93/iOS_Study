@@ -50,7 +50,8 @@ class ChatViewController: UIViewController {
                             
                             DispatchQueue.main.async {
                                 self.tableView.reloadData()
-                            }// closure안에 내용은 바로 실행되지만 네트워크 환경에 따라서 어떻게 될지 모르므로 dispatchQueue.main.async를 사용한다.
+                                //tableView DataSource를 다시 실행.
+                            }// closure안에 내용은 바로 실행되지만 네트워크 환경에 따라서 어떻게 될지 모르므로 Foreground에서 나타나게 사용한다.
                         }
                     }
                 }
