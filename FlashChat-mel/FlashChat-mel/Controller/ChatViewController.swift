@@ -28,10 +28,14 @@ class ChatViewController: UIViewController {
     }
     
     func loadMessages() {
-        message = []
         
         // .getDocuments: Firebase 데이터베이스 안에 있는 데이터를 가져온다. 자동완성 (completion)에서 Enter
-        db.collection(K.FStore.collectionName).getDocuments { (querySnapshot, error) in
+        db.collection(K.FStore.collectionName)
+            .order(by: K.FStore.dateField)
+            .addSnapshotListener { (querySnapshot, error) in
+            
+            self.message = []
+            
             if let e = error {
                 print("There was an issue retrieving data from FireStore. \(e)")
             }else  {
