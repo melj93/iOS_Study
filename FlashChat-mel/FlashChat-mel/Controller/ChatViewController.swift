@@ -35,10 +35,21 @@ class ChatViewController: UIViewController {
             if let e = error {
                 print("There was an issue retrieving data from FireStore. \(e)")
             }else  {
-                //querySnapshot 에대한 이해 QueryDocumentSnapshot: The document is guaranteed to exist and its data can be extracted with the data property or by using subscript syntax to access a specific field.
-                //자세한 내용은 https://firebase.google.com/docs/reference/swift/firebasefirestore/api/reference/Classes/QueryDocumentSnapshot
-                querySnapshot?.documents[0].data()[K.FStore.senderField]
-                //documents 의 첫번째 배열에 있는 데이터, 그리고 그 배열의 키값으로 참조
+                if let snapshotDocuments = querySnapshot?.documents {
+                    for doc in snapshotDocuments {
+                        let data = doc.data()
+                        
+                        if let messageSender = data[K.FStore.senderField] as? String, let messageBody = data[K.FStore.bodyField] as? String {
+                            
+                            let newMessage = Message(sender: messageSender, body: messageBody)
+                            self.message.append(newMessage)
+                            
+                            DispatchQueue.main.async {
+                                self.tableView.reloadData()
+                            }// closure안에 내용은 바로 실행되지만 네트워크 환경에 따라서 어떻게 될지 모르므로 dispatchQueue.main.async를 사용한다.
+                        }
+                    }
+                }
             }
         }
     }
