@@ -18,6 +18,9 @@ class ChatViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        messageTextField.delegate = self
+        
         tableView.dataSource = self
         title = K.appName
         navigationItem.hidesBackButton = true
@@ -73,7 +76,9 @@ class ChatViewController: UIViewController {
                 }
             }
         }
+        messageTextField.endEditing(true)
     }
+    
     @IBAction func logOutPressed(_ sender: UIBarButtonItem) {
         do {
             try Auth.auth().signOut()
@@ -96,3 +101,27 @@ extension ChatViewController: UITableViewDataSource {
     }
 }
 
+//MARK:- UITextFieldDelegate
+extension ChatViewController: UITextFieldDelegate {
+    
+    //go (return) 했을때
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        messageTextField.endEditing(true) //자판 닫기
+        return true
+    }
+    
+    //사용자가 수정을 완료하기 전에
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        if textField.text != "" { // 2. 아니면 진행
+            return true
+        }else {
+            textField.placeholder = "Say Something stupid." // 1. 필드가 비워졌다면 적으라는 문구를 보이고 stop
+            return false
+        }
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        messageTextField.text = ""
+    }
+}
