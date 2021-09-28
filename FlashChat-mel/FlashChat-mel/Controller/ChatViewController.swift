@@ -14,7 +14,7 @@ class ChatViewController: UIViewController {
     
     let db = Firestore.firestore()
     
-    var message: [Message] = []
+    var messages: [Message] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +37,7 @@ class ChatViewController: UIViewController {
             .order(by: K.FStore.dateField)
             .addSnapshotListener { (querySnapshot, error) in
             
-            self.message = []
+            self.messages = []
             
             if let e = error {
                 print("There was an issue retrieving data from FireStore. \(e)")
@@ -49,11 +49,14 @@ class ChatViewController: UIViewController {
                         if let messageSender = data[K.FStore.senderField] as? String, let messageBody = data[K.FStore.bodyField] as? String {
                             
                             let newMessage = Message(sender: messageSender, body: messageBody)
-                            self.message.append(newMessage)
+                            self.messages.append(newMessage)
                             
                             DispatchQueue.main.async {
                                 self.tableView.reloadData()
                                 //tableView DataSource를 다시 실행.
+                                
+                                let indexPath = IndexPath(row: self.messages.count - 1, section: 0)
+                                self.tableView.scrollToRow(at: indexPath, at: .top, animated: true)
                             }// closure안에 내용은 바로 실행되지만 네트워크 환경에 따라서 어떻게 될지 모르므로 Foreground에서 나타나게 사용한다.
                         }
                     }
@@ -89,27 +92,40 @@ class ChatViewController: UIViewController {
     }
 }
 
+//MARK: - UITableViewDataSource
 extension ChatViewController: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return message.count
+        return messages.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let message = messages[indexPath.row]
+        
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath) as! MessageCell
-        cell.label.text = message[indexPath.row].body
+        cell.label.text = message.body
+        
+        //This is a message from the current user.
+        if message.sender == Auth.auth().currentUser?.email {
+            cell.leftImageView.isHidden = true
+            cell.rightImageView.isHidden = false
+            cell.messageBubble.backgroundColor = UIColor(named: K.BrandColors.lightPurple)
+            cell.label.textColor = UIColor(named: K.BrandColors.purple)
+        }
+        //This is a message from another sender.
+        else{
+            cell.leftImageView.isHidden = false
+            cell.rightImageView.isHidden = true
+            cell.messageBubble.backgroundColor = UIColor(named: K.BrandColors.purple)
+            cell.label.textColor = UIColor(named: K.BrandColors.lightPurple)
+        }
         return cell
     }
 }
 
 //MARK:- UITextFieldDelegate
 extension ChatViewController: UITextFieldDelegate {
-    
-    //go (return) 했을때
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        
-        messageTextField.endEditing(true) //자판 닫기
-        return true
-    }
     
     //사용자가 수정을 완료하기 전에
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
