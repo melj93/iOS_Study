@@ -123,21 +123,3 @@ extension ChatViewController: UITableViewDataSource {
         return cell
     }
 }
-
-//MARK:- UITextFieldDelegate
-extension ChatViewController: UITextFieldDelegate {
-    
-    //사용자가 수정을 완료하기 전에
-    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
-        if textField.text != "" { // 2. 아니면 진행
-            return true
-        }else {
-            textField.placeholder = "Say Something stupid." // 1. 필드가 비워졌다면 적으라는 문구를 보이고 stop
-            return false
-        }
-    }
-    
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        messageTextField.text = ""
-    }
-}
