@@ -14,17 +14,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="FlashChat_mel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚡️FlashChat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6m-vI-YXw">
-                                <rect key="frame" x="60.666666666666657" y="433" width="307" height="60"/>
+                                <rect key="frame" x="60.666666666666657" y="389" width="307" height="60"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="50"/>
                                 <color key="textColor" name="BrandBlue"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DmW-if-qnS">
-                                <rect key="frame" x="0.0" y="778" width="428" height="48"/>
+                                <rect key="frame" x="0.0" y="690" width="428" height="48"/>
                                 <color key="backgroundColor" name="BrandLightBlue"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="MGS-nK-FyB"/>
@@ -39,7 +39,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCA-Wj-OK5">
-                                <rect key="frame" x="0.0" y="832" width="428" height="60"/>
+                                <rect key="frame" x="0.0" y="744" width="428" height="60"/>
                                 <color key="backgroundColor" name="BrandBlue"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="W8e-Y8-IGq"/>
@@ -80,11 +80,11 @@
             <objects>
                 <viewController id="a5R-ho-L7N" customClass="RegisterViewController" customModule="FlashChat_mel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4MK-Oc-XMf">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nzu-Fs-QTC" userLabel="Email View">
-                                <rect key="frame" x="0.0" y="88" width="428" height="177"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="177"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="UHp-oE-pC3">
                                         <rect key="frame" x="0.0" y="20" width="428" height="137"/>
@@ -108,7 +108,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O1v-6h-yr7" userLabel="Password View">
-                                <rect key="frame" x="0.0" y="165" width="428" height="177"/>
+                                <rect key="frame" x="0.0" y="77" width="428" height="177"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="o2q-Sa-2z9">
                                         <rect key="frame" x="0.0" y="20" width="428" height="137"/>
@@ -172,11 +172,11 @@
             <objects>
                 <viewController id="5vO-KE-ESs" customClass="ChatViewController" customModule="FlashChat_mel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZiR-gj-3cD">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yEI-7J-jR7">
-                                <rect key="frame" x="0.0" y="832" width="428" height="60"/>
+                                <rect key="frame" x="0.0" y="744" width="428" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BzO-XB-8rx">
                                         <rect key="frame" x="368" y="15" width="40" height="40"/>
@@ -208,7 +208,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Rvi-1a-L1a">
-                                <rect key="frame" x="0.0" y="88" width="428" height="744"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="744"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -245,11 +245,11 @@
             <objects>
                 <viewController id="Xdn-UM-ng2" customClass="LogInViewContoller" customModule="FlashChat_mel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tbw-5j-TB6">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fnu-X4-bCs" userLabel="Email View">
-                                <rect key="frame" x="0.0" y="88" width="428" height="177"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="177"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="zKW-qK-wAo">
                                         <rect key="frame" x="0.0" y="20" width="428" height="137"/>
@@ -273,7 +273,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xgC-cg-9e3" userLabel="Password View">
-                                <rect key="frame" x="0.0" y="165" width="428" height="177"/>
+                                <rect key="frame" x="0.0" y="77" width="428" height="177"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="fFZ-03-3zP">
                                         <rect key="frame" x="0.0" y="20" width="428" height="137"/>
@@ -337,9 +337,10 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FRR-Zc-vId" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ecr-Ts-PEE">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Ecr-Ts-PEE">
                         <rect key="frame" x="0.0" y="44" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" name="BrandBlue"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" type="system" weight="black" pointSize="25"/>
@@ -357,7 +358,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="C3p-kf-3hb"/>
+        <segue reference="Hta-AY-kO6"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="paperplane.fill" catalog="system" width="128" height="118"/>
