@@ -18,7 +18,11 @@ struct ContentView: View {
                     .fontWeight(.bold)
                     .foregroundColor(Color.white)
                     .padding()
-                Image("mandoo").resizable().aspectRatio(contentMode: .fit)
+                Image("mandoo")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 400 , height: 400
+                           , alignment: .center)
             }
         }
     }
