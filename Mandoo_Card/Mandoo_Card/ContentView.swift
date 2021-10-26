@@ -10,12 +10,12 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
             ZStack{
-                Color(red: 0.97, green: 0.65, blue: 0.76, opacity: 1.00)
+                Color(red: 0.97, green: 0.84, blue: 0.58, opacity: 1.00)
                     .edgesIgnoringSafeArea(.all)
                 Text("만두")
-                    .font(.largeTitle)
+                    .font(Font.custom("MaruBuri-Bold", size: 40))
                     .fontWeight(.bold)
-                    .foregroundColor(Color.white)
+                    .foregroundColor(Color.black)
                     .padding()
             }
     }

@@ -66,13 +66,13 @@
 		AB5905892727B5E200E7F2F5 /* Mandoo_Card */ = {
 			isa = PBXGroup;
 			children = (
-				AB59059E2727C33E00E7F2F5 /* fonts */,
 				AB59058A2727B5E200E7F2F5 /* AppDelegate.swift */,
 				AB59058C2727B5E200E7F2F5 /* SceneDelegate.swift */,
 				AB59058E2727B5E200E7F2F5 /* ContentView.swift */,
 				AB5905902727B5E400E7F2F5 /* Assets.xcassets */,
 				AB5905952727B5E400E7F2F5 /* LaunchScreen.storyboard */,
 				AB5905982727B5E400E7F2F5 /* Info.plist */,
+				AB59059E2727C33E00E7F2F5 /* fonts */,
 				AB5905922727B5E400E7F2F5 /* Preview Content */,
 			);
 			path = Mandoo_Card;
