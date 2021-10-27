@@ -18,6 +18,8 @@
 		AB5905A62727C39D00E7F2F5 /* MaruBuri-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AB5905A12727C39900E7F2F5 /* MaruBuri-ExtraLight.ttf */; };
 		AB5905A72727C39D00E7F2F5 /* MaruBuri-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AB5905A22727C39B00E7F2F5 /* MaruBuri-Regular.ttf */; };
 		AB5905A82727C39D00E7F2F5 /* MaruBuri-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AB5905A32727C39D00E7F2F5 /* MaruBuri-SemiBold.ttf */; };
+		AB96A42D2728FE1600A12CF4 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB96A42C2728FE1600A12CF4 /* InfoView.swift */; };
+		AB96A42F272905BB00A12CF4 /* RoundedCircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB96A42E272905BB00A12CF4 /* RoundedCircleImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		AB5905A12727C39900E7F2F5 /* MaruBuri-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MaruBuri-ExtraLight.ttf"; sourceTree = "<group>"; };
 		AB5905A22727C39B00E7F2F5 /* MaruBuri-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MaruBuri-Regular.ttf"; sourceTree = "<group>"; };
 		AB5905A32727C39D00E7F2F5 /* MaruBuri-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MaruBuri-SemiBold.ttf"; sourceTree = "<group>"; };
+		AB96A42C2728FE1600A12CF4 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		AB96A42E272905BB00A12CF4 /* RoundedCircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCircleImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				AB59058A2727B5E200E7F2F5 /* AppDelegate.swift */,
 				AB59058C2727B5E200E7F2F5 /* SceneDelegate.swift */,
 				AB59058E2727B5E200E7F2F5 /* ContentView.swift */,
+				AB96A42E272905BB00A12CF4 /* RoundedCircleImage.swift */,
+				AB96A42C2728FE1600A12CF4 /* InfoView.swift */,
 				AB5905902727B5E400E7F2F5 /* Assets.xcassets */,
 				AB5905952727B5E400E7F2F5 /* LaunchScreen.storyboard */,
 				AB5905982727B5E400E7F2F5 /* Info.plist */,
@@ -173,7 +179,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB96A42D2728FE1600A12CF4 /* InfoView.swift in Sources */,
 				AB59058B2727B5E200E7F2F5 /* AppDelegate.swift in Sources */,
+				AB96A42F272905BB00A12CF4 /* RoundedCircleImage.swift in Sources */,
 				AB59058D2727B5E200E7F2F5 /* SceneDelegate.swift in Sources */,
 				AB59058F2727B5E200E7F2F5 /* ContentView.swift in Sources */,
 			);

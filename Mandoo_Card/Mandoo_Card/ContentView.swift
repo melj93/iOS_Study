@@ -13,26 +13,13 @@ struct ContentView: View {
             Color(.systemGray)
                 .edgesIgnoringSafeArea(.all)
             VStack {
-                Image("mandoo")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width:200.0, height: 200.0)
-                    .clipShape(Circle())
-                    .overlay(Circle().stroke(Color.white, lineWidth: 5))
-                    .padding(.bottom, 10.0)
-                Text("만두")
-                    .font(Font.custom("MaruBuri-Bold", size: 40))
-                    .fontWeight(.bold)
-                    .foregroundColor(Color.white)
-                Text("고양이")
-                    .foregroundColor(.white)
-                    .font(
-                        Font.custom("MaruBuri-Regular", size: 25)
-                    )
-                    .padding(.top, 2.0)
+                RoundedCircleImage(image: "mandoo")
+                Title()
+                SubTitle()
                 Divider()
                     .padding()
                 InfoView(text: "010 9201 8000", imageName: "phone.fill")
+                InfoView(text: "mandoo@cat.com", imageName: "envelope.fill")
             }
         }
     }
@@ -44,20 +31,23 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct InfoView: View {
-    
-    let text: String
-    let imageName: String
-    
+
+
+struct Title: View {
     var body: some View {
-        RoundedRectangle(cornerRadius: 25)
-            .fill(Color.white)
-            .frame(height: 50)
-            .overlay(HStack {
-                Image(systemName: imageName)
-                    .foregroundColor(.green)
-                Text(text)
-            })
-            .padding(.all)
+        Text("만두")
+            .font(Font.custom("MaruBuri-Bold", size: 40))
+            .foregroundColor(Color.white)
+    }
+}
+
+struct SubTitle: View {
+    var body: some View {
+        Text("고양이")
+            .font(
+                Font.custom("MaruBuri-Regular", size: 25)
+            )
+            .foregroundColor(.white)
+            .padding(.top, 2.0)
     }
 }
