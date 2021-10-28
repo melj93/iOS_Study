@@ -14,10 +14,44 @@ struct ContentView: View {
                 .resizable()
                 .edgesIgnoringSafeArea(.all)
             
-            Text("Hello, world!")
-                .padding()
+            VStack {
+                Image("diceeLogo")
+                
+                Spacer()
+                
+                HStack {
+                    DiceView(n:1)
+                    DiceView(n:1)
+                }
+                .padding(.horizontal)
+                
+                Spacer()
+                
+                Button(action: {
+                    
+                }) {
+                    Text("굴리기")
+                        .font(.system(size: 50))
+                        .fontWeight(.heavy)
+                        .foregroundColor(.white)
+                        .padding()
+                }
+                .background(Color.red)
+            }
         }
         
+    }
+}
+
+struct DiceView: View {
+    
+    let n: Int
+    
+    var body: some View {
+        Image("dice\(n)")
+            .resizable()
+            .aspectRatio(1, contentMode: .fit)
+            .padding()
     }
 }
 
