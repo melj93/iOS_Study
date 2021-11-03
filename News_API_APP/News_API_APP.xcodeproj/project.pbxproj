@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB41BB9F273250D300C928DD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB41BB9E273250D300C928DD /* NetworkManager.swift */; };
 		ABDFCE85272BB8CB0007E14B /* News_API_APPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDFCE84272BB8CB0007E14B /* News_API_APPApp.swift */; };
 		ABDFCE87272BB8CB0007E14B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDFCE86272BB8CB0007E14B /* ContentView.swift */; };
 		ABDFCE89272BB8D00007E14B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABDFCE88272BB8D00007E14B /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB41BB9E273250D300C928DD /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		ABDFCE81272BB8CB0007E14B /* News_API_APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = News_API_APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABDFCE84272BB8CB0007E14B /* News_API_APPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News_API_APPApp.swift; sourceTree = "<group>"; };
 		ABDFCE86272BB8CB0007E14B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +34,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB41BBA0273250DE00C928DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB41BB9E273250D300C928DD /* NetworkManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		ABDFCE78272BB8CB0007E14B = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +63,7 @@
 			children = (
 				ABDFCE84272BB8CB0007E14B /* News_API_APPApp.swift */,
 				ABDFCE86272BB8CB0007E14B /* ContentView.swift */,
+				AB41BBA0273250DE00C928DD /* Model */,
 				ABDFCE88272BB8D00007E14B /* Assets.xcassets */,
 				ABDFCE8A272BB8D00007E14B /* Preview Content */,
 			);
@@ -137,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB41BB9F273250D300C928DD /* NetworkManager.swift in Sources */,
 				ABDFCE87272BB8CB0007E14B /* ContentView.swift in Sources */,
 				ABDFCE85272BB8CB0007E14B /* News_API_APPApp.swift in Sources */,
 			);
