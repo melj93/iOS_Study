@@ -6,7 +6,33 @@
 //
 
 import Foundation
+import SwiftUI
 
-class NetworkManager {
-    let url = URL(string: "https://hn.algolia.com/api/v1/search?tags=front_page")
+class NetworkManager: ObservableObject {
+    
+    @Published var posts = [Post]()
+    //Published : 해당 변수를 브로드 캐스팅 할수 있음.
+    
+    func fetchData() { //Hacker News api Url로부터 데이터 가져오기.
+        if let url = URL(string: "https://hn.algolia.com/api/v1/search?tags=front_page") {
+            let session = URLSession(configuration: .default)
+            let task = session.dataTask(with: url, completionHandler: { data, response, error in
+                if error == nil {
+                    let decoder = JSONDecoder()
+                    if let safeData = data {
+                        do {
+                            let results = try decoder.decode(Results.self, from: safeData)
+                            DispatchQueue.main.async {
+                                self.posts = results.hits
+                            } //비동기화안에 넣어야 ObservedObject프로퍼티를 사용할 수 있음.
+                        } catch {
+                            print(error)
+                        }
+                        
+                    }
+                }
+            })
+            task.resume()
+        }
+    }
 }
