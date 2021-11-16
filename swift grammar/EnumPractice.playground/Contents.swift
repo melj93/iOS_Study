@@ -1,58 +1,60 @@
 import UIKit
 
-enum WeekDays: Character {
-    case mon = "월", tue = "화", wed = "수", thu = "목", fri = "금", sat = "토", sun = "일"
+enum socialPlatforms: String, CaseIterable {
+    case twitter = "Never used it"
+    case facebook = "Sucks"
+    case instagram = "So hot"
+    case cyworld = "Old man"
+    case budybudy = "Dead man"
 }
 
-let today: WeekDays = WeekDays.fri
-
-print("오늘은 \(today)요일입니다.")
-//fir
-print("오늘은 \(today.rawValue)요일입니다.")
-//금
-// rawValue 프로퍼티: 원시값을 사용할 수 있음.
-
-
-
-//연관 값을 갖는 열거형
-enum PastaTaste {
-    case cream, tomato
+func getSNS(on platforms: socialPlatforms) {
+    switch platforms {
+    case .budybudy:
+        print("Code something on it Budybudy")
+    case .twitter:
+        print("Code something on it Twitter")
+    case .facebook:
+        print("Code something on it Facebook")
+    case .instagram:
+        print("Code something on it Instagram")
+    case .cyworld:
+        print("Code something on it Cyworld")
+    }
 }
 
-enum PizzaDough {
-    case  normal, cheeseCrust, thin
+
+
+//func getSamsOpinion(on platform: socialPlatforms) {
+//    print(platform.rawValue)
+//}
+//
+//getSNS(on: .twitter)
+//getSamsOpinion(on: .twitter)
+//
+//for platforms in socialPlatforms.allCases {
+//    print("\(platforms.hashValue)_hash : \(platforms.rawValue)_raw")
+//}
+
+
+enum SocialMediaPlatform {
+    case youtube(subscriber: Int)
+    case instagram(liked: Int)
+    case linkedIn
+    case naver
 }
 
-enum PizzaTopping {
-    case pepperoni, cheese, bacon
+func getSponsorship(for platform: SocialMediaPlatform) {
+    switch platform {
+    case .instagram(let subscribers) where subscribers > 10_000:
+        print("Elegible for sponsored Instagram.")
+    case .youtube(let liked) where liked > 20_000:
+        print("Elegible for sponsored Youtube.")
+    case .instagram, .linkedIn, .naver, .youtube:
+        print("Not Elegible for spornsorship.")
+    }
 }
 
-enum MainDish {
-    case past(taste: PastaTaste)
-    case pizza(dough: PizzaDough, topping: PizzaTopping)
-    case chicken(withSauce: Bool)
-    case rice
-}
 
-var dinner: MainDish = MainDish.past(taste: .cream)
-print(dinner)
-dinner = .pizza(dough: .thin, topping: .bacon)
-print(dinner)
-dinner = .chicken(withSauce: true)
-print(dinner)
-dinner = .rice
-print(dinner)
-
-
-enum School: CaseIterable{
-    case primary
-    case elementary
-    case middle
-    case high
-    case college
-    case university
-    case graduate
-}
-
-let allCases: [School] = School.allCases
-print(allCases)
+getSponsorship(for: .youtube(subscriber: 5))
+getSponsorship(for: .instagram(liked: 40000))

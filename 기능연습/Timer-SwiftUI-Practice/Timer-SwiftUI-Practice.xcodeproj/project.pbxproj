@@ -7,30 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB41BB9F273250D300C928DD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB41BB9E273250D300C928DD /* NetworkManager.swift */; };
-		AB41BBA22733B57800C928DD /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB41BBA12733B57800C928DD /* Post.swift */; };
-		AB8326B4274244DB0050B9DD /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8326B3274244DB0050B9DD /* DetailView.swift */; };
-		AB8326B8274354350050B9DD /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8326B7274354350050B9DD /* WebView.swift */; };
-		ABDFCE85272BB8CB0007E14B /* News_API_APPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDFCE84272BB8CB0007E14B /* News_API_APPApp.swift */; };
-		ABDFCE87272BB8CB0007E14B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDFCE86272BB8CB0007E14B /* ContentView.swift */; };
-		ABDFCE89272BB8D00007E14B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABDFCE88272BB8D00007E14B /* Assets.xcassets */; };
-		ABDFCE8C272BB8D00007E14B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABDFCE8B272BB8D00007E14B /* Preview Assets.xcassets */; };
+		AB69E6DE2740AB56005C72EC /* Timer_SwiftUI_PracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB69E6DD2740AB56005C72EC /* Timer_SwiftUI_PracticeApp.swift */; };
+		AB69E6E02740AB56005C72EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB69E6DF2740AB56005C72EC /* ContentView.swift */; };
+		AB69E6E22740AB5A005C72EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB69E6E12740AB5A005C72EC /* Assets.xcassets */; };
+		AB69E6E52740AB5A005C72EC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB69E6E42740AB5A005C72EC /* Preview Assets.xcassets */; };
+		AB69E6EC2740AB8A005C72EC /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB69E6EB2740AB8A005C72EC /* Helper.swift */; };
+		AB69E6EE274143F6005C72EC /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB69E6ED274143F6005C72EC /* TimerManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AB41BB9E273250D300C928DD /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		AB41BBA12733B57800C928DD /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		AB8326B3274244DB0050B9DD /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
-		AB8326B7274354350050B9DD /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
-		ABDFCE81272BB8CB0007E14B /* News_API_APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = News_API_APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		ABDFCE84272BB8CB0007E14B /* News_API_APPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News_API_APPApp.swift; sourceTree = "<group>"; };
-		ABDFCE86272BB8CB0007E14B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		ABDFCE88272BB8D00007E14B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		ABDFCE8B272BB8D00007E14B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AB69E6DA2740AB56005C72EC /* Timer-SwiftUI-Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Timer-SwiftUI-Practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB69E6DD2740AB56005C72EC /* Timer_SwiftUI_PracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer_SwiftUI_PracticeApp.swift; sourceTree = "<group>"; };
+		AB69E6DF2740AB56005C72EC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AB69E6E12740AB5A005C72EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB69E6E42740AB5A005C72EC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AB69E6EB2740AB8A005C72EC /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		AB69E6ED274143F6005C72EC /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		ABDFCE7E272BB8CB0007E14B /* Frameworks */ = {
+		AB69E6D72740AB56005C72EC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -40,57 +36,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AB41BBA0273250DE00C928DD /* Model */ = {
+		AB69E6D12740AB56005C72EC = {
 			isa = PBXGroup;
 			children = (
-				AB41BB9E273250D300C928DD /* NetworkManager.swift */,
-				AB41BBA12733B57800C928DD /* Post.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		AB8326B2274244BA0050B9DD /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				ABDFCE86272BB8CB0007E14B /* ContentView.swift */,
-				AB8326B3274244DB0050B9DD /* DetailView.swift */,
-				AB8326B7274354350050B9DD /* WebView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		ABDFCE78272BB8CB0007E14B = {
-			isa = PBXGroup;
-			children = (
-				ABDFCE83272BB8CB0007E14B /* News_API_APP */,
-				ABDFCE82272BB8CB0007E14B /* Products */,
+				AB69E6DC2740AB56005C72EC /* Timer-SwiftUI-Practice */,
+				AB69E6DB2740AB56005C72EC /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		ABDFCE82272BB8CB0007E14B /* Products */ = {
+		AB69E6DB2740AB56005C72EC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ABDFCE81272BB8CB0007E14B /* News_API_APP.app */,
+				AB69E6DA2740AB56005C72EC /* Timer-SwiftUI-Practice.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ABDFCE83272BB8CB0007E14B /* News_API_APP */ = {
+		AB69E6DC2740AB56005C72EC /* Timer-SwiftUI-Practice */ = {
 			isa = PBXGroup;
 			children = (
-				ABDFCE84272BB8CB0007E14B /* News_API_APPApp.swift */,
-				AB8326B2274244BA0050B9DD /* Views */,
-				AB41BBA0273250DE00C928DD /* Model */,
-				ABDFCE88272BB8D00007E14B /* Assets.xcassets */,
-				ABDFCE8A272BB8D00007E14B /* Preview Content */,
+				AB69E6DD2740AB56005C72EC /* Timer_SwiftUI_PracticeApp.swift */,
+				AB69E6DF2740AB56005C72EC /* ContentView.swift */,
+				AB69E6ED274143F6005C72EC /* TimerManager.swift */,
+				AB69E6EB2740AB8A005C72EC /* Helper.swift */,
+				AB69E6E12740AB5A005C72EC /* Assets.xcassets */,
+				AB69E6E32740AB5A005C72EC /* Preview Content */,
 			);
-			path = News_API_APP;
+			path = "Timer-SwiftUI-Practice";
 			sourceTree = "<group>";
 		};
-		ABDFCE8A272BB8D00007E14B /* Preview Content */ = {
+		AB69E6E32740AB5A005C72EC /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				ABDFCE8B272BB8D00007E14B /* Preview Assets.xcassets */,
+				AB69E6E42740AB5A005C72EC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -98,39 +76,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ABDFCE80272BB8CB0007E14B /* News_API_APP */ = {
+		AB69E6D92740AB56005C72EC /* Timer-SwiftUI-Practice */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ABDFCE8F272BB8D00007E14B /* Build configuration list for PBXNativeTarget "News_API_APP" */;
+			buildConfigurationList = AB69E6E82740AB5A005C72EC /* Build configuration list for PBXNativeTarget "Timer-SwiftUI-Practice" */;
 			buildPhases = (
-				ABDFCE7D272BB8CB0007E14B /* Sources */,
-				ABDFCE7E272BB8CB0007E14B /* Frameworks */,
-				ABDFCE7F272BB8CB0007E14B /* Resources */,
+				AB69E6D62740AB56005C72EC /* Sources */,
+				AB69E6D72740AB56005C72EC /* Frameworks */,
+				AB69E6D82740AB56005C72EC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = News_API_APP;
-			productName = News_API_APP;
-			productReference = ABDFCE81272BB8CB0007E14B /* News_API_APP.app */;
+			name = "Timer-SwiftUI-Practice";
+			productName = "Timer-SwiftUI-Practice";
+			productReference = AB69E6DA2740AB56005C72EC /* Timer-SwiftUI-Practice.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		ABDFCE79272BB8CB0007E14B /* Project object */ = {
+		AB69E6D22740AB56005C72EC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
-					ABDFCE80272BB8CB0007E14B = {
+					AB69E6D92740AB56005C72EC = {
 						CreatedOnToolsVersion = 13.1;
 					};
 				};
 			};
-			buildConfigurationList = ABDFCE7C272BB8CB0007E14B /* Build configuration list for PBXProject "News_API_APP" */;
+			buildConfigurationList = AB69E6D52740AB56005C72EC /* Build configuration list for PBXProject "Timer-SwiftUI-Practice" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -138,46 +116,44 @@
 				en,
 				Base,
 			);
-			mainGroup = ABDFCE78272BB8CB0007E14B;
-			productRefGroup = ABDFCE82272BB8CB0007E14B /* Products */;
+			mainGroup = AB69E6D12740AB56005C72EC;
+			productRefGroup = AB69E6DB2740AB56005C72EC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ABDFCE80272BB8CB0007E14B /* News_API_APP */,
+				AB69E6D92740AB56005C72EC /* Timer-SwiftUI-Practice */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		ABDFCE7F272BB8CB0007E14B /* Resources */ = {
+		AB69E6D82740AB56005C72EC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABDFCE8C272BB8D00007E14B /* Preview Assets.xcassets in Resources */,
-				ABDFCE89272BB8D00007E14B /* Assets.xcassets in Resources */,
+				AB69E6E52740AB5A005C72EC /* Preview Assets.xcassets in Resources */,
+				AB69E6E22740AB5A005C72EC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		ABDFCE7D272BB8CB0007E14B /* Sources */ = {
+		AB69E6D62740AB56005C72EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB41BB9F273250D300C928DD /* NetworkManager.swift in Sources */,
-				ABDFCE87272BB8CB0007E14B /* ContentView.swift in Sources */,
-				ABDFCE85272BB8CB0007E14B /* News_API_APPApp.swift in Sources */,
-				AB8326B8274354350050B9DD /* WebView.swift in Sources */,
-				AB8326B4274244DB0050B9DD /* DetailView.swift in Sources */,
-				AB41BBA22733B57800C928DD /* Post.swift in Sources */,
+				AB69E6E02740AB56005C72EC /* ContentView.swift in Sources */,
+				AB69E6EE274143F6005C72EC /* TimerManager.swift in Sources */,
+				AB69E6DE2740AB56005C72EC /* Timer_SwiftUI_PracticeApp.swift in Sources */,
+				AB69E6EC2740AB8A005C72EC /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		ABDFCE8D272BB8D00007E14B /* Debug */ = {
+		AB69E6E62740AB5A005C72EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -238,7 +214,7 @@
 			};
 			name = Debug;
 		};
-		ABDFCE8E272BB8D00007E14B /* Release */ = {
+		AB69E6E72740AB5A005C72EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -293,14 +269,14 @@
 			};
 			name = Release;
 		};
-		ABDFCE90272BB8D00007E14B /* Debug */ = {
+		AB69E6E92740AB5A005C72EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"News_API_APP/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Timer-SwiftUI-Practice/Preview Content\"";
 				DEVELOPMENT_TEAM = 6M8DMFG46L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -314,7 +290,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "SamuelJeong.News-API-APP";
+				PRODUCT_BUNDLE_IDENTIFIER = "SamuelJeong.Timer-SwiftUI-Practice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -322,14 +298,14 @@
 			};
 			name = Debug;
 		};
-		ABDFCE91272BB8D00007E14B /* Release */ = {
+		AB69E6EA2740AB5A005C72EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"News_API_APP/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Timer-SwiftUI-Practice/Preview Content\"";
 				DEVELOPMENT_TEAM = 6M8DMFG46L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -343,7 +319,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "SamuelJeong.News-API-APP";
+				PRODUCT_BUNDLE_IDENTIFIER = "SamuelJeong.Timer-SwiftUI-Practice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -354,25 +330,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ABDFCE7C272BB8CB0007E14B /* Build configuration list for PBXProject "News_API_APP" */ = {
+		AB69E6D52740AB56005C72EC /* Build configuration list for PBXProject "Timer-SwiftUI-Practice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ABDFCE8D272BB8D00007E14B /* Debug */,
-				ABDFCE8E272BB8D00007E14B /* Release */,
+				AB69E6E62740AB5A005C72EC /* Debug */,
+				AB69E6E72740AB5A005C72EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ABDFCE8F272BB8D00007E14B /* Build configuration list for PBXNativeTarget "News_API_APP" */ = {
+		AB69E6E82740AB5A005C72EC /* Build configuration list for PBXNativeTarget "Timer-SwiftUI-Practice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ABDFCE90272BB8D00007E14B /* Debug */,
-				ABDFCE91272BB8D00007E14B /* Release */,
+				AB69E6E92740AB5A005C72EC /* Debug */,
+				AB69E6EA2740AB5A005C72EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = ABDFCE79272BB8CB0007E14B /* Project object */;
+	rootObject = AB69E6D22740AB56005C72EC /* Project object */;
 }

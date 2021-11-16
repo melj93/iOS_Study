@@ -24,7 +24,7 @@ class NetworkManager: ObservableObject {
                             let results = try decoder.decode(Results.self, from: safeData)
                             DispatchQueue.main.async {
                                 self.posts = results.hits
-                            } //비동기화안에 넣어야 ObservedObject프로퍼티를 사용할 수 있음.
+                            }
                         } catch {
                             print(error)
                         }
