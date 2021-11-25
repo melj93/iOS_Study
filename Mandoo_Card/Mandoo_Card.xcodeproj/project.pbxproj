@@ -1,0 +1,386 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB59058B2727B5E200E7F2F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB59058A2727B5E200E7F2F5 /* AppDelegate.swift */; };
+		AB59058D2727B5E200E7F2F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB59058C2727B5E200E7F2F5 /* SceneDelegate.swift */; };
+		AB59058F2727B5E200E7F2F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB59058E2727B5E200E7F2F5 /* ContentView.swift */; };
+		AB5905912727B5E400E7F2F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB5905902727B5E400E7F2F5 /* Assets.xcassets */; };
+		AB5905942727B5E400E7F2F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB5905932727B5E400E7F2F5 /* Preview Assets.xcassets */; };
+		AB5905972727B5E400E7F2F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB5905952727B5E400E7F2F5 /* LaunchScreen.storyboard */; };
+		AB5905A42727C39D00E7F2F5 /* MaruBuri-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AB59059F2727C39500E7F2F5 /* MaruBuri-Bold.ttf */; };
+		AB5905A52727C39D00E7F2F5 /* MaruBuri-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AB5905A02727C39700E7F2F5 /* MaruBuri-Light.ttf */; };
+		AB5905A62727C39D00E7F2F5 /* MaruBuri-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AB5905A12727C39900E7F2F5 /* MaruBuri-ExtraLight.ttf */; };
+		AB5905A72727C39D00E7F2F5 /* MaruBuri-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AB5905A22727C39B00E7F2F5 /* MaruBuri-Regular.ttf */; };
+		AB5905A82727C39D00E7F2F5 /* MaruBuri-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AB5905A32727C39D00E7F2F5 /* MaruBuri-SemiBold.ttf */; };
+		AB96A42D2728FE1600A12CF4 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB96A42C2728FE1600A12CF4 /* InfoView.swift */; };
+		AB96A42F272905BB00A12CF4 /* RoundedCircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB96A42E272905BB00A12CF4 /* RoundedCircleImage.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AB5905872727B5E200E7F2F5 /* Mandoo_Card.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mandoo_Card.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB59058A2727B5E200E7F2F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AB59058C2727B5E200E7F2F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AB59058E2727B5E200E7F2F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AB5905902727B5E400E7F2F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB5905932727B5E400E7F2F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AB5905962727B5E400E7F2F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AB5905982727B5E400E7F2F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB59059F2727C39500E7F2F5 /* MaruBuri-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MaruBuri-Bold.ttf"; sourceTree = "<group>"; };
+		AB5905A02727C39700E7F2F5 /* MaruBuri-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MaruBuri-Light.ttf"; sourceTree = "<group>"; };
+		AB5905A12727C39900E7F2F5 /* MaruBuri-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MaruBuri-ExtraLight.ttf"; sourceTree = "<group>"; };
+		AB5905A22727C39B00E7F2F5 /* MaruBuri-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MaruBuri-Regular.ttf"; sourceTree = "<group>"; };
+		AB5905A32727C39D00E7F2F5 /* MaruBuri-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MaruBuri-SemiBold.ttf"; sourceTree = "<group>"; };
+		AB96A42C2728FE1600A12CF4 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		AB96A42E272905BB00A12CF4 /* RoundedCircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCircleImage.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB5905842727B5E200E7F2F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB59057E2727B5E200E7F2F5 = {
+			isa = PBXGroup;
+			children = (
+				AB5905892727B5E200E7F2F5 /* Mandoo_Card */,
+				AB5905882727B5E200E7F2F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB5905882727B5E200E7F2F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB5905872727B5E200E7F2F5 /* Mandoo_Card.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB5905892727B5E200E7F2F5 /* Mandoo_Card */ = {
+			isa = PBXGroup;
+			children = (
+				AB59058A2727B5E200E7F2F5 /* AppDelegate.swift */,
+				AB59058C2727B5E200E7F2F5 /* SceneDelegate.swift */,
+				AB59058E2727B5E200E7F2F5 /* ContentView.swift */,
+				AB96A42E272905BB00A12CF4 /* RoundedCircleImage.swift */,
+				AB96A42C2728FE1600A12CF4 /* InfoView.swift */,
+				AB5905902727B5E400E7F2F5 /* Assets.xcassets */,
+				AB5905952727B5E400E7F2F5 /* LaunchScreen.storyboard */,
+				AB5905982727B5E400E7F2F5 /* Info.plist */,
+				AB59059E2727C33E00E7F2F5 /* fonts */,
+				AB5905922727B5E400E7F2F5 /* Preview Content */,
+			);
+			path = Mandoo_Card;
+			sourceTree = "<group>";
+		};
+		AB5905922727B5E400E7F2F5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AB5905932727B5E400E7F2F5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AB59059E2727C33E00E7F2F5 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AB59059F2727C39500E7F2F5 /* MaruBuri-Bold.ttf */,
+				AB5905A12727C39900E7F2F5 /* MaruBuri-ExtraLight.ttf */,
+				AB5905A02727C39700E7F2F5 /* MaruBuri-Light.ttf */,
+				AB5905A22727C39B00E7F2F5 /* MaruBuri-Regular.ttf */,
+				AB5905A32727C39D00E7F2F5 /* MaruBuri-SemiBold.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB5905862727B5E200E7F2F5 /* Mandoo_Card */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB59059B2727B5E400E7F2F5 /* Build configuration list for PBXNativeTarget "Mandoo_Card" */;
+			buildPhases = (
+				AB5905832727B5E200E7F2F5 /* Sources */,
+				AB5905842727B5E200E7F2F5 /* Frameworks */,
+				AB5905852727B5E200E7F2F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mandoo_Card;
+			productName = SwiftUI_Cat_practice;
+			productReference = AB5905872727B5E200E7F2F5 /* Mandoo_Card.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB59057F2727B5E200E7F2F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					AB5905862727B5E200E7F2F5 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = AB5905822727B5E200E7F2F5 /* Build configuration list for PBXProject "Mandoo_Card" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB59057E2727B5E200E7F2F5;
+			productRefGroup = AB5905882727B5E200E7F2F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB5905862727B5E200E7F2F5 /* Mandoo_Card */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB5905852727B5E200E7F2F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB5905972727B5E400E7F2F5 /* LaunchScreen.storyboard in Resources */,
+				AB5905A62727C39D00E7F2F5 /* MaruBuri-ExtraLight.ttf in Resources */,
+				AB5905942727B5E400E7F2F5 /* Preview Assets.xcassets in Resources */,
+				AB5905A72727C39D00E7F2F5 /* MaruBuri-Regular.ttf in Resources */,
+				AB5905A82727C39D00E7F2F5 /* MaruBuri-SemiBold.ttf in Resources */,
+				AB5905A42727C39D00E7F2F5 /* MaruBuri-Bold.ttf in Resources */,
+				AB5905912727B5E400E7F2F5 /* Assets.xcassets in Resources */,
+				AB5905A52727C39D00E7F2F5 /* MaruBuri-Light.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB5905832727B5E200E7F2F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB96A42D2728FE1600A12CF4 /* InfoView.swift in Sources */,
+				AB59058B2727B5E200E7F2F5 /* AppDelegate.swift in Sources */,
+				AB96A42F272905BB00A12CF4 /* RoundedCircleImage.swift in Sources */,
+				AB59058D2727B5E200E7F2F5 /* SceneDelegate.swift in Sources */,
+				AB59058F2727B5E200E7F2F5 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AB5905952727B5E400E7F2F5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB5905962727B5E400E7F2F5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB5905992727B5E400E7F2F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AB59059A2727B5E400E7F2F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB59059C2727B5E400E7F2F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Mandoo_Card/Preview Content\"";
+				DEVELOPMENT_TEAM = 6M8DMFG46L;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Mandoo_Card/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SamuelJeong.Mandoo_Card;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		AB59059D2727B5E400E7F2F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Mandoo_Card/Preview Content\"";
+				DEVELOPMENT_TEAM = 6M8DMFG46L;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Mandoo_Card/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SamuelJeong.Mandoo_Card;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB5905822727B5E200E7F2F5 /* Build configuration list for PBXProject "Mandoo_Card" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB5905992727B5E400E7F2F5 /* Debug */,
+				AB59059A2727B5E400E7F2F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB59059B2727B5E400E7F2F5 /* Build configuration list for PBXNativeTarget "Mandoo_Card" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB59059C2727B5E400E7F2F5 /* Debug */,
+				AB59059D2727B5E400E7F2F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB59057F2727B5E200E7F2F5 /* Project object */;
+}
